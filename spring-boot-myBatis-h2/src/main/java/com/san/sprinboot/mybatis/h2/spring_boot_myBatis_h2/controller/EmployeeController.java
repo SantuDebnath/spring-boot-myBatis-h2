@@ -33,7 +33,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/getEmp/{empId}",method = RequestMethod.GET)
 	public Employee getEmplyee(@PathVariable Long empId){
-		
+		logger.info("calling employee service");
 		return empService.getEmplyee(empId);
 	}
 	
