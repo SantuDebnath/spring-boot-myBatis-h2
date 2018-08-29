@@ -1,4 +1,4 @@
-# spring-boot-myBatis-h2
+# spring-boot-myBatis-h2-hateoas
 A sample project using Spring-boot, Mybatis and H2 database
 
 This is a simple employee management portal, where someone can execute basic CRUD operations on employee.
@@ -12,6 +12,10 @@ MyBatis: MyBatis is a Java persistence framework that couples objects with store
 MyBatis is light weight and fast compared to Hibernate/JPA. Here you dont need to learn HQL or JPQL. You can do anything with mysql.
 
 H2 : H2 is a relational database management system written in Java. It can be embedded in Java applications or run in the client-server mode
+
+HATEOAS : The Hypermedia Constraint (formerly known as HATEOAS) is a constraint that is used to provide direction to the user-agent.
+
+By including links in returned representations, the server can remove the burden from the user-agent of determining what actions can be taken based on the current application state and knowing who to interact with in-order to achieve that goal.
 
 # You can access H2 console from below ling with the given credentials..
 
@@ -48,4 +52,25 @@ PUT           localhost:8080/employee/delEmp/1002         N/A
 
 
 GET           localhost:8080/employee/getEmp/1003          N/A
+
+GET           http://localhost:8080/employee/dept/ADM     {
+                                                              "deptCode": "ADM",
+                                                              "deptName": "Application Development",
+                                                              "employees": [
+                                                                  {
+                                                                      "name": "Haneef",
+                                                                      "empId": 1001,
+                                                                      "deptCode": "ADM",
+                                                                      "passportNo": "E1234567",
+                                                                      "links": []
+                                                                  },
+                                                                  {
+                                                                      "name": "sandeep",
+                                                                      "empId": 1002,
+                                                                      "deptCode": "ADM",
+                                                                      "passportNo": "E1234987",
+                                                                      "links": []
+                                                                  }
+                                                              ]
+                                                          }
 
