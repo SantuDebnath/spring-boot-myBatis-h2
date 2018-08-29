@@ -27,17 +27,20 @@ User Name : san
 Password :
 
 
-# You can simlpy run this application and interact with it using Postman
+## You can simlpy run this application and interact with it using Postman
 
 Method                  url                           request body
+---
 
 GET             localhost:8080/employee/getAllEmp         N/A
+---
 
 POST            localhost:8080/employee/createEmp         {
                                                             "name": "Srinibas",
                                                             "deptCode": "DBA",
                                                             "passportNo": "E123876"
                                                             }
+---                                                            
                                                             
                                                             
 POST            localhost:8080/employee/updateEmp         {
