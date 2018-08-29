@@ -19,13 +19,16 @@ MyBatis is light weight and fast compared to Hibernate/JPA. Here you dont need t
 
 By including links in returned representations, the server can remove the burden from the user-agent of determining what actions can be taken based on the current application state and knowing who to interact with in-order to achieve that goal.
 
-# You can access H2 console from below ling with the given credentials..
+# You can access H2 console from below link with the given credentials..
 
 http://localhost:8080/h2/login.jsp?jsessionid=b368e6178c785028d4c15a4a9a46c7d1
 
 Driver Class:org.h2.Driver
+
 JDBC URL:jdbc:h2:~/test
+
 User Name : san
+
 Password :
 
 
