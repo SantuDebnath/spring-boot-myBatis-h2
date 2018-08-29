@@ -29,34 +29,32 @@ Password :
 
 ## You can simlpy run this application and interact with it using Postman
 
-|Method        |               url                    |       request body        |
-|--------------|:-------------:|:--------------------:|:-------------------------:|
+Method                       url                           request body        
+
+GET            localhost:8080/employee/getAllEmp        N/A                    
 
 
-|GET           | localhost:8080/employee/getAllEmp    |    N/A                    |
-
-
-|POST           | localhost:8080/employee/createEmp    |   {                       
+POST            localhost:8080/employee/createEmp       {                       
                                                             "name": "Srinibas",
                                                             "deptCode": "DBA",
                                                             "passportNo": "E123876"
-                                                            }                       |
+                                                            }                       
                                                             
                                                             
                                                             
-|POST           | localhost:8080/employee/updateEmp      |   {
+POST            localhost:8080/employee/updateEmp        {
                                                             "name": "Haneef_seikh",
                                                             "empId": 1001,
                                                             "deptCode": "ADM",
                                                             "passportNo": "E1234567"
-                                                          }     |                                                       
+                                                          }                                                           
                                                             
-|PUT          | localhost:8080/employee/delEmp/1002      |   N/A|
+PUT           localhost:8080/employee/delEmp/1002         N/A
 
 
-|GET         |  localhost:8080/employee/getEmp/1003        |  N/A|
+GET           localhost:8080/employee/getEmp/1003          N/A
 
-|GET         |  http://localhost:8080/employee/dept/ADM     |{
+GET           http://localhost:8080/employee/dept/ADM     {
                                                               "deptCode": "ADM",
                                                               "deptName": "Application Development",
                                                               "employees": [
@@ -75,13 +73,13 @@ Password :
                                                                       "links": []
                                                                   }
                                                               ]
-                                                          }                                     |
+                                                          }                                     
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| method  	|   url	|   request body	|  
+|---	|---	|---	|
+|  GET 	|  localhost:8080/employee/getAllEmp 	| N/A  	| 
+|   	|   	|   	|   
+|   	|   	|   	|   	
 
 
 
