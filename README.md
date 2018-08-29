@@ -37,7 +37,6 @@ POST            localhost:8080/employee/createEmp         {
                                                             "name": "Srinibas",
                                                             "deptCode": "DBA",
                                                             "passportNo": "E123876"
-
                                                             }
                                                             
                                                             
