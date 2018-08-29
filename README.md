@@ -2,7 +2,9 @@
 A sample project using Spring-boot, Mybatis and H2 database
 
 This is a simple employee management portal, where someone can execute basic CRUD operations on employee.
-This project have rest end points for add, update, delete, get by empId and getAll functionality.
+Each employee has a department. Using Mybatis entities are mapped in mapper. Annotations are used instead of xml.
+Here, Department and Employee has one to many relationship.
+This project have rest end points for add, update, delete, get by empId, getAll employee, get department with corresponding employees functionality.
 
 # Technical Stack description
 
