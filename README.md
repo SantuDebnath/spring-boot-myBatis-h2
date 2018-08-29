@@ -30,17 +30,17 @@ Password :
 ## You can simlpy run this application and interact with it using Postman
 
 Method                  url                           request body
----
+
 
 GET             localhost:8080/employee/getAllEmp         N/A
----
+
 
 POST            localhost:8080/employee/createEmp         {
                                                             "name": "Srinibas",
                                                             "deptCode": "DBA",
                                                             "passportNo": "E123876"
                                                             }
----                                                            
+                                                            
                                                             
                                                             
 POST            localhost:8080/employee/updateEmp         {
@@ -76,3 +76,12 @@ GET           http://localhost:8080/employee/dept/ADM     {
                                                               ]
                                                           }
 
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+
+
+written using markdown syntax :-)
