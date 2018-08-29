@@ -78,7 +78,11 @@ GET           http://localhost:8080/employee/dept/ADM     {
 | method  	|   url	|   request body	|  
 |---	|---	|---	|
 |  GET 	|  localhost:8080/employee/getAllEmp 	| N/A  	| 
-|   	|   	|   	|   
+|   POST	|   localhost:8080/employee/createEmp	| 
+                                                          {  "name": "Srinibas",
+                                                            "deptCode": "DBA",
+                                                            "passportNo": "E123876"
+                                                            }    	|   
 |   	|   	|   	|   	
 
 
