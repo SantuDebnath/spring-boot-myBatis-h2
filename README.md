@@ -78,15 +78,8 @@ GET           http://localhost:8080/employee/dept/ADM     {
 | method  	|   url	|   request body	|  
 |---	|---	|---	|
 |  GET 	|  localhost:8080/employee/getAllEmp 	| N/A  	| 
-|  POST	|   localhost:8080/employee/createEmp	|{  "name": "Srinibas",
-                                                            "deptCode": "DBA",
-                                                            "passportNo": "E123876"
-                                                            }|   
-|  POST 	|  localhost:8080/employee/updateEmp 	|{ "name": "Haneef_seikh",
-                                                            "empId": 1001,
-                                                            "deptCode": "ADM",
-                                                            "passportNo": "E1234567"
-                                                          }|   	
+|  POST	|   localhost:8080/employee/createEmp	|{"name": "Srinibas", "deptCode": "DBA","passportNo": "E123876"}|   
+|  POST 	|  localhost:8080/employee/updateEmp 	|{ "name": "Haneef_seikh", "empId": 1001,"deptCode": "ADM", "passportNo": "E1234567"}|   
 |PUT|localhost:8080/employee/delEmp/1002|N/A|
 |GET|localhost:8080/employee/getEmp/1003|N/A|
 |GET|localhost:8080/employee/dept/ADM|N/A|
