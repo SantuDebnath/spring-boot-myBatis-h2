@@ -1,3 +1,12 @@
+insert into department
+values('ADM','Application Development');
+
+insert into department
+values('QA','Quality Analyst');
+
+insert into department
+values('MGR','Project Manager');
+
 insert into employee
 values('Haneef', 1001,'ADM', 'E1234567');
 

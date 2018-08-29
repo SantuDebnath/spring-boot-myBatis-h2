@@ -38,6 +38,12 @@ public interface EmployeeMapper {
 	
 	@Delete("delete from employee where emp_Id=#{empId} ")
 	public boolean deleteEmployee(@Param("empId") Long empId);
+	
+	@Select("SELECT * FROM employee WHERE deptCode = #{deptCode}")
+	@Results({
+		@Result(property = "empId", column = "emp_Id"),
+	    @Result(property = "passportNo", column = "passport_No")})
+	public List<Employee> getEmployeeByDeptCode(String deptCode);
 
 
 }

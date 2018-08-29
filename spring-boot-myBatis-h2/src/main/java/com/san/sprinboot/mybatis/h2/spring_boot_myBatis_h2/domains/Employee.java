@@ -1,6 +1,8 @@
 package com.san.sprinboot.mybatis.h2.spring_boot_myBatis_h2.domains;
 
-public class Employee {
+import org.springframework.hateoas.ResourceSupport;
+
+public class Employee extends ResourceSupport {
 
 	private String name;
 	
